@@ -4,6 +4,7 @@ go 1.24.0
 
 require (
 	github.com/golang-jwt/jwt/v5 v5.2.1
+	github.com/gorilla/mux v1.8.1
 	github.com/lpernett/godotenv v0.0.0-20230527005122-0de1d4c5ef5e
 	golang.org/x/crypto v0.36.0
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
