@@ -38,7 +38,7 @@ type Answer struct {
 type Submission struct {
 	ID        uint `gorm:"primaryKey"`
 	QuizID    uint `gorm:"index"`
-	UserID    uint `gorm:"not null"`
+	UserID    uint `gorm:"not null;index"`
 	Score     float32
 	CreatedAt time.Time `gorm:"not null;autoCreateTime"`
 	UpdatedAt time.Time `gorm:"not null;autoUpdateTime"`
