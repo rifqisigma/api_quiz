@@ -5,3 +5,7 @@ Backend api Quiz service dengan Go
 - ✅ Autentifikasi
 - ✅ CRUD dan Validasi
 - ✅ Validasi User with JWT
+
+
+## dari saya:
+kalau ada yg error cakap saja , sebab project ini saya buru buru kelar cuz sya nak pulkam
