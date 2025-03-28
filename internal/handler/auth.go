@@ -105,6 +105,6 @@ func (h *AuthHandler) Verification(w http.ResponseWriter, r *http.Request) {
 	}
 
 	helper.WriteJSON(w, http.StatusOK, map[string]string{
-		"message": "link berhasil terkirim",
+		"message": "user berhasil ter verifikasi, mantap!",
 	})
 }
