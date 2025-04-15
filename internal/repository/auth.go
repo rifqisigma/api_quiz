@@ -61,7 +61,7 @@ func (r *authRepository) DeleteUser(id uint) error {
 }
 
 func (r *authRepository) ValidateUser(id uint) error {
-	err := r.db.Model(&entity.User{}).Where("id", id).Update("is_verified", true).Error
+	err := r.db.Model(&entity.User{}).Where("id = ?", id).Update("is_verified", true).Error
 
 	if err != nil {
 		if err == gorm.ErrRecordNotFound {
