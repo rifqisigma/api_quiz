@@ -38,7 +38,7 @@ func (r *authRepository) Register(dto *dto.Register) (*entity.User, error) {
 
 func (r *authRepository) Login(input *dto.Login) (*entity.User, error) {
 	var user entity.User
-	err := r.db.Where("email = ?", input.Email).First(&user).Error
+	err := r.db.Where("email = ? AND is_verified = ?", input.Email, true).First(&user).Error
 
 	if err != nil {
 		if err == gorm.ErrRecordNotFound {
